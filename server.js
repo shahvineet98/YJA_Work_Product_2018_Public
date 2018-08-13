@@ -60,8 +60,8 @@ app.post('/user', function(req, res) {
 		lastName: req.body.lastName,
 		dob: req.body.dob,
 		contactInfo: {
-			phone: req.body.phone,
-			email: req.body.email,
+			phone: req.body.contactInfo.phone,
+			email: req.body.contactInfo.email,
 			address: {
 				street_address: req.body.contactInfo.address.street_address,
 				street_address_2: req.body.contactInfo.address.street_address_2,
